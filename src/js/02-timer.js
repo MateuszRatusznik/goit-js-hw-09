@@ -85,11 +85,7 @@ btnStart.addEventListener("click", () => {
     }, 1000);
   });
 
-const timer = document.querySelector(".timer");
-const field = document.querySelectorAll(".field");
 
-timer.style.display = "flex";
-field.style.marginLeft = "10px";
 
 
 
