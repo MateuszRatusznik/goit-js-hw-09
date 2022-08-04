@@ -26,10 +26,10 @@ button.addEventListener("click", event => {
   let userStep = Number(step.value);
     for(let i=0; i < amount.value; i++) {
       createPromise(1 + i, firstDelay + i * userStep)
-      .then(({ position, delay }) => {
+      .then(({ position, delay }) => {//
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
-      .catch(({ position, delay }) => {
+      .catch(({ position, delay }) => {//
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
     }
